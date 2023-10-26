@@ -52,6 +52,7 @@ func _ready():
 	restartButton = get_node("%Restart Button")
 	mainContainer = get_node("%Main Button Container")
 	countGraphic.custom_minimum_size.x = get_viewport().get_visible_rect().size.x
+	countBacking.custom_minimum_size.x = get_viewport().get_visible_rect().size.x
 	scrollUpButton.self_modulate.a = 0
 	scrollDownButton.self_modulate.a = 0
 	hideScrollButtons()
