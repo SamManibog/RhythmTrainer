@@ -168,7 +168,6 @@ func flashButtons():
 
 func enableTapHint():
 	disableTapHint()
-	print("enable")
 	tapDelayTween = create_tween()
 	tapDelayTween.tween_interval(5)
 	tapDelayTween.tween_callback(beginTapHint)
@@ -194,7 +193,6 @@ func beginTapHint():
 
 
 func disableTapHint():
-	print("disable")
 	if tapDelayTween:
 		tapDelayTween.kill()
 	
