@@ -1,6 +1,6 @@
 # RhythmTrainer
 
-Rhythm Trainer is a hobby project made with the Godot Game Engine and was started in the summer of 2023. It is my first introduction to object-oriented programming, Godot, and app design.
+Rhythm Trainer is a hobby project made with the Godot Game Engine and started in the summer of 2023. It is my first introduction to object-oriented programming, Godot, and app design.
 
 The purpose of this project was to create a space for growing musicians to hone their skills anywhere by sight reading rhythms. The guiding principles in the development of the app were to make practice as easy, frequent, effective, and customizable as possible.
 
