@@ -106,37 +106,6 @@ func setDefaultSave():
 			"highlightCurrentMeasure": true
 		},
 		"generationPresets": {
-#			"Demo": {
-#				"divProb": [0, 0.05, 0.2, 0.2, 0.1],
-#				"noteProb": [1, 0.8, 0.7, 0.7, 0.8],
-#				"tripletProb": [0, 0, 0, .05, 0],
-#				"tiedProb": [0.4, 0.4, 0.4, 0.4, 0.2],
-#				"syncoProb": [0, 0.2, 0.5, 1, 1],
-#				"tieOverMeasureProb": .05,
-#				"sigChangeProb": 0.1,
-#				"sigList": [
-#					{
-#						"numerator": 4,
-#						"denominator": 4,
-#						"chance": 50
-#					},
-#					{
-#						"numerator": 3,
-#						"denominator": 4,
-#						"chance": 50
-#					},
-#					{
-#						"numerator": 5,
-#						"denominator": 4,
-#						"chance": 50
-#					},
-#					{
-#						"numerator": 7,
-#						"denominator": 8,
-#						"chance": 50
-#					},
-#				]
-#			},
 			"Easy": {
 				"divProb": [0.04, 0.2, 0.4, 0.1, 0],
 				"noteProb": [1, 0.8, 0.7, 0.9, 0.85],
