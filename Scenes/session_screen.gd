@@ -771,9 +771,9 @@ func generateSequence(length): ## chance is 100% for change
 		
 		if currentTimeSignature != previousTimeSignature:
 			currentMeasureGraphics.addGraphic(util.graphicData.measureLine, -1, MEASURE_LINE, {"xIncrimentRatio": .1})
-			currentMeasureGraphics.addGraphic(util.graphicData.timeSignature[currentTimeSignature.numerator], -1, TIME_SIGNATURE, {})
-			currentMeasureGraphics.addGraphic(util.graphicData.timeSignature[currentTimeSignature.denominator], -1, TIME_SIGNATURE,
-					{"offset": Vector2(0, util.graphicData.timeSignature[currentTimeSignature.numerator].dimensions.y),
+			currentMeasureGraphics.addGraphic(util.graphicData.timeSignature[currentTimeSignature.numerator as int], -1, TIME_SIGNATURE, {})
+			currentMeasureGraphics.addGraphic(util.graphicData.timeSignature[currentTimeSignature.denominator as int], -1, TIME_SIGNATURE,
+					{"offset": Vector2(0, util.graphicData.timeSignature[currentTimeSignature.numerator as int].dimensions.y),
 					"xIncrimentRatio": 1})
 		nextMeasure = null if measure >= length - 1 else generateMeasure(nextTimeSignature.numerator, nextTimeSignature.denominator)
 		
