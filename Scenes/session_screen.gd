@@ -191,8 +191,8 @@ func METRONOME_COUNT_IN():
 		if !sessionSettings.highlightCurrentMeasure: clearHighlights()
 		var currentCountInBeatTime: int = Time.get_ticks_msec()
 		countInStarted = true
-		averageCountInInterval = 60.0 / sessionSettings.BPM as float * 1000.0 * (4.0 / currentMeasure.timeSignature.denominator as float)
-		unitDurationLength = averageCountInInterval * 4.0 / currentMeasure.timeSignature.denominator
+		averageCountInInterval = 60.0 / sessionSettings.BPM as float * 1000.0
+		unitDurationLength = round(averageCountInInterval as float * currentMeasure.timeSignature.denominator as float / 4.0)
 		metronome.bigPulse(averageCountInInterval)
 		UI.pulseCount(averageCountInInterval, 1)
 		if useMetronomeSound:
